@@ -1,49 +1,138 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<!-- guild -->
+			<section>
+				<section>
+					<h2>哈囉，這是一份reveal.js簡報</h2>
+					<!-- <p>接下來，容我引導您了解如何使用它</p> -->
+					<p>您可以使用 <em>空白鍵</em>  簡單的瀏覽所有頁面</p>
+					<a href="#" class="navigate-down enabled">
+						<img width="178" height="238" alt="Down arrow" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-lazy-loaded="">
+					</a>
+				</section>
+				<section>
+					<h2>同時簡報是巢狀結構的</h2>
+					<p>這意味著...</p>
+					<p>同一個章節(主題)會再排在垂直線上</p>
+					<p>而章節們會水平展開</p>
+					<p>您可以試著按下 <em>ESC鍵</em> 總覽整份簡報</p>
+					<br><br>
+					<p>(... keep press space)</p>
+				</section>
+				<section id="fragments">
+					<h2>方向鍵也是允許的</h2>
+					<p>也依舊是同一章節優先，也就是...</p>
+					<p class="fragment" data-fragment-index="0">...向下優於向右</p><br>
+					<p class="fragment" data-fragment-index="1">( 觸控螢幕也可以滑動換頁呦 )</p>
+					<p class="fragment" data-fragment-index="2">同時右下角也有提示</p>
+				</section>
+				<section>
+					<h2>導覽到此為止</h2>
+					<p>或許您會使用:</p>
+					<ul>
+						<li>F 或 F11 : 享受全螢幕</li>
+						<li>V 或 B : 關閉燈光</li>
+						<li>S : 進入演講者模式</li>
+					</ul>
+					<p>您可以使用 <em>空白鍵</em> 或是 <em>右方向鍵</em> 進入下一章節</p>
+				</section>
+			</section>
+			<!-- main page -->
+			<section>
+				<section>
+					<h2>筆電選購大作戰</h2>
+				</section>
+				<section>
+					<h2>大綱</h2>
+					<ol>
+						<li>影響體驗的四大因素</li>
+						<li>各品牌筆電系列摘要</li>
+						<li>配件的重要性</li>
+						<li>NA</li>
+					</ol>
+				</section>
+			</section>
+			<!-- experence -->
+			<section>
+				<section>
+					<h2>影響體驗的四大因素</h2>
+					<ul>
+						<li>便利性</li>
+						<li>反應速度</li>
+						<li>外觀體驗</li>
+						<li>品牌形象</li>
+					</ul>
+				</section>
+				<section>
+					<h2>便利性</h2>
+					<ol>
+						<li>weight : 隨時一手帶著到處跑的輕盈</li>
+						<li>size : 隨時塞入手提包，不會太大、太小</li>
+						<li>battery : 隨時不中斷的電力支援(10hr up)</li>
+						<li>I/O : 隨時想插什麼線，都有孔可以支援</li>
+					</ol>
+				</section>
+				<section>
+					<h2>反應速度</h2>
+					<ul>
+						<li>Ram : 暫存記憶體反應速度及大小(2100Hz, 8G up)</li>
+						<li>Storge : 硬碟容量大小(128G ssd + 1T hdd up)</li>
+						<li>CPU : 中央處理器速度(i5系列 up</li>
+						<li>(選) GPU : 有玩大型遊戲、渲染高畫質影片需求(GTX-1050 up)</li>
+					</ul>
+				</section>
+				<section></section>
+				<section></section>
+			</section>
+			
+			<section>Slide 2</section>
+
 		</div>
+	</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+
 </html>
